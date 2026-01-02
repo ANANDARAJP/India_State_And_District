@@ -13,7 +13,6 @@ public class StateService {
     private final StateRepository stateRepository;
     private final DistrictRepository districtRepository;
 
-    // ✅ ONLY ONE constructor (Spring will autowire this)
     public StateService(StateRepository stateRepository,
                         DistrictRepository districtRepository) {
         this.stateRepository = stateRepository;

@@ -15,7 +15,6 @@ public class DistrictService {
         this.districtRepository = districtRepository;
     }
 
-    // ✅ Save all districts with state-wise unique code check
     public List<District> saveAll(List<District> districts) {
 
         for (District district : districts) {
@@ -34,17 +33,14 @@ public class DistrictService {
         return districtRepository.saveAll(districts);
     }
 
-    // ✅ Get all districts
     public List<District> getAll() {
         return districtRepository.findAll();
     }
 
-    // ✅ Delete district by id
     public void deleteById(Long id) {
         districtRepository.deleteById(id);
     }
 
-    // ✅ Delete all districts by stateId
     public void deleteByStateId(Long stateId) {
         districtRepository.deleteByState_Id(stateId);
     }
