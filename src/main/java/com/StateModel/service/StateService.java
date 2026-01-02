@@ -41,7 +41,7 @@ public class StateService {
                         new RuntimeException("State not found with id : " + id));
     }
 
-    // Delete state safely
+    // Delete state 
     public void deleteById(Long id) {
         // delete districts first (FK safety)
         districtRepository.deleteByState_Id(id);
