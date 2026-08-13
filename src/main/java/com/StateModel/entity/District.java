@@ -9,7 +9,7 @@ import lombok.Data;
         name = "districtmodel",
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "uk_state_code",
+                        name = "uk_district_state_code",
                         columnNames = { "state_id", "code" }
                 )
         }
